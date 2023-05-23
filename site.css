@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.container-full {
+    width: 100%;
+    display: flex;
+}
+/* Menü */
+
+.nav{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav a{
+    text-decoration: none;
+    color:#000;
+    margin-left: 20px;
+    font-size: 14px;
+    
+}
+.nav a::after{
+    content:"";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: .3s;
+}
+.nav a:hover::after{
+    width: 100%;
+}
+#left,
+#right{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+#right{
+    justify-content: flex-end;
+}
+#left>img{
+width: 115px;
+}
+/* Slider */
+.slide>img{
+    width: 100%;
+}
+
+/* mini spot */
+.mini-spot-area{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.mini-spot{
+    width: 100px;
+}
+.mini-spot a{
+    text-decoration: none;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mini-spot a >p{
+    text-align: center;
+}
+
+.big-spot a{
+    text-decoration: none;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.big-spot a >img{
+    width: 280px;
+    margin: 10px;
+}
